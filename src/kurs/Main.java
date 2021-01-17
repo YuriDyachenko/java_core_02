@@ -31,6 +31,7 @@ public class Main {
         shiftArray(new int[]{1, 2, 3}, 1);
         shiftArray(new int[]{1, 2, 3}, 2);
         shiftArray(new int[]{3, 5, 6, 1}, -2);
+
     }
 
     //0. Пусть будет функция вывода массива целых в одну строку
@@ -98,6 +99,7 @@ public class Main {
         outArray("original", a);
         for (int i = 0; i < a.length; i++) {
             a[i][i] = 1;
+            a[i][a.length - 1 - i] = 1;
         }
         outArray("changed", a);
     }
